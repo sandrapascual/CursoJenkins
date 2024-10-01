@@ -1,0 +1,19 @@
+pipeline
+{
+    agent any
+        
+    stages
+    {
+        stage("Mostrar informacion")
+        {
+            steps
+            {
+                script
+                {
+                    println "El clima actual es soleado"
+                    println "La población actual son 15000 habitantes"
+                }
+            }
+        }
+    }
+}
